@@ -9,14 +9,14 @@ class Knight:
     # Define the 8 possible L-shaped knight moves
     # Direction: (row_change, col_change)
     MOVES = {
-        1: (-1, 2),   # up-right
-        2: (-2, 1),   # right-up
-        3: (-2, -1),  # right-down
-        4: (-1, -2),  # down-right
-        5: (1, -2),   # down-left
-        6: (2, -1),   # left-down
-        7: (2, 1),    # left-up
-        8: (1, 2)     # up-left
+        1: (1, -2),   # up-right
+        2: (2, -1),   # right-up
+        3: (2, 1),  # right-down
+        4: (1, 2),  # down-right
+        5: (-1, 2),   # down-left
+        6: (-2, 1),   # left-down
+        7: (-2, -1),    # left-up
+        8: (-1, -2)     # up-left
     }
     
     def __init__(self, chromosome=None):
