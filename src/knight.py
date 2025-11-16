@@ -123,7 +123,7 @@ class Knight:
             for attempt in range(8):
                 # Cycle through moves
                 if cycle_forward:
-                    test_move = (current_move % 8) + 1
+                    test_move = (current_move % 8) + 1 #cuz we re using indexes form 0 to 7 we need to make them from 1 to 8 
                 else:
                     test_move = ((current_move - 2) % 8) + 1
                 
