@@ -1,5 +1,6 @@
 import random
 from src.population import Population
+from src.visualizer import visualize_solution, print_board
 
 def main():
     """
@@ -55,22 +56,32 @@ def main():
             print()
             print("Chromosome (first 20 genes):", best_solution.chromosome.genes[:20])
             print("=" * 60)
+            print()
+            
+            
+            # Show graphical board
+            print("Displaying visualization...")
+            visualize_solution(best_solution)
             break
         
         # Safety check - stop if taking too long
         if population.generation >= max_generations:
             print()
             print("=" * 60)
-            print(f"⚠️  Reached maximum generations ({max_generations})")
+            print(f"⚠️ Reached maximum generations ({max_generations})")
             print(f"Best fitness achieved: {max_fitness}/64")
             print("=" * 60)
+            print()
+            
+            # Show best solution found so far
+            print("Best solution found:")
+            print_board(best_solution)
+            print()
+            visualize_solution(best_solution)
             break
         
         # Create next generation
         population.create_new_generation()
-    
-    # TODO: Add visualization here
-    # visualize_solution(best_solution)
 
 if __name__ == "__main__":
     main()
