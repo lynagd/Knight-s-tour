@@ -7,8 +7,6 @@ Knight's Tour solver using Genetic Algorithm in Python. Finds optimal chess knig
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Algorithm Overview](#algorithm-overview)
-- [Team](#team)
-- [License](#license)
 
 ## ✨ Features
 
@@ -32,7 +30,7 @@ Knight's Tour solver using Genetic Algorithm in Python. Finds optimal chess knig
 
 1. **Clone the repository**
 ```bash
-   git clone https://github.com/your-username/knight-s-tour.git
+   git clone https://github.com/lynagd/knight-s-tour.git
    cd knights-s-tour
 ```
 
@@ -62,30 +60,18 @@ python main.py
 knights-tour-genetic-algorithm/
 │
 ├── src/
-│   ├── __init__.py
+│   ├── Knight.jpg
 │   ├── chromosome.py      # Chromosome class with genes manipulation
 │   ├── knight.py          # Knight class with movement logic
 │   ├── population.py      # Population class with GA operations
 │   └── visualizer.py      # UI for solution visualization
 │
-├── tests/
-│   ├── __init__.py
-│   ├── test_chromosome.py
-│   ├── test_knight.py
-│   └── test_population.py
-│
-├── docs/
-│   ├── algorithm.md       # Detailed algorithm explanation
-│   └── examples.md        # Usage examples and results
-│
-├── assets/
-│   └── screenshots/       # Solution visualizations
-│
 ├── main.py               # Main entry point
+├──test_success_rate.py
+├──test_simple.py
 ├── requirements.txt      # Python dependencies
 ├── .gitignore
 ├── README.md
-└── LICENSE
 ```
 
 ## 💻 Usage
@@ -164,13 +150,6 @@ Fitness = Number of unique squares visited (max: 64)
 - **Duplicate Check:** Prevent revisiting squares
 - **Adaptive Correction:** Cycle through alternatives if move is invalid
 
-## 👥 Team
-
-| Name | GitHub | Role |
-|------|--------|------|
-| [Teammate 1] | [@username1](https://github.com/username1) | Chromosome & Knight classes |
-| [Teammate 2] | [@username2](https://github.com/username2) | Population & GA operations |
-| [Teammate 3] | [@username3](https://github.com/username3) | Visualization & Testing |
 
 ## 📊 Results
 
@@ -191,22 +170,7 @@ This is an academic project, but suggestions are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Dr. Meriem SEBAI for project guidance
-- USTHB Faculty of Computer Science
-- Chess programming community for inspiration
-
-## 📧 Contact
-
-For questions or feedback regarding this project:
-- **Course:** Problem Solving - Master 1 Visual Computing
-- **Institution:** USTHB
-- **Academic Year:** 2025/2026
 
 ---
 
